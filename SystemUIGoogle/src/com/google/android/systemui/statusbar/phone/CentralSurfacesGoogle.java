@@ -103,6 +103,7 @@ import com.android.systemui.statusbar.phone.ShadeController;
 import com.android.systemui.statusbar.phone.StatusBarHideIconsForBouncerManager;
 import com.android.systemui.statusbar.phone.StatusBarKeyguardViewManager;
 import com.android.systemui.statusbar.phone.StatusBarSignalPolicy;
+import com.android.systemui.statusbar.phone.StatusBarIconController;
 import com.android.systemui.statusbar.phone.StatusBarTouchableRegionManager;
 import com.android.systemui.statusbar.phone.dagger.CentralSurfacesComponent;
 import com.android.systemui.statusbar.phone.ongoingcall.OngoingCallController;
@@ -235,6 +236,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
             WallpaperController wallpaperController,
             OngoingCallController ongoingCallController,
             StatusBarHideIconsForBouncerManager statusBarHideIconsForBouncerManager,
+	    StatusBarIconController statusBarIconController,
             LockscreenShadeTransitionController lockscreenShadeTransitionController,
             FeatureFlags featureFlags,
             KeyguardUnlockAnimationController keyguardUnlockAnimationController,
@@ -278,7 +280,7 @@ public class CentralSurfacesGoogle extends CentralSurfacesImpl {
                 notificationShadeDepthControllerLazy, statusBarTouchableRegionManager,
                 notificationIconAreaController, brightnessSliderFactory,
                 screenOffAnimationController, wallpaperController, ongoingCallController,
-                statusBarHideIconsForBouncerManager, lockscreenShadeTransitionController,
+                statusBarHideIconsForBouncerManager, statusBarIconController, lockscreenShadeTransitionController,
                 featureFlags, keyguardUnlockAnimationController, mainHandler, delayableExecutor,
                 messageRouter, wallpaperManager, startingSurfaceOptional, activityLaunchAnimator,
                 notifPipelineFlags, jankMonitor, deviceStateManager, dreamOverlayStateController,
