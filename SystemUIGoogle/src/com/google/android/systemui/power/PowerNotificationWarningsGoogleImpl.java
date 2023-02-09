@@ -58,7 +58,7 @@ public final class PowerNotificationWarningsGoogleImpl extends PowerNotification
                 if (intent == null || intent.getAction() == null) {
                     return;
                 }
-                Log.d("PowerNotificationWarningsGoogleImpl", "onReceive: " + intent.getAction());
+                //Log.d("PowerNotificationWarningsGoogleImpl", "onReceive: " + intent.getAction());
                 mBatteryInfoBroadcast.notifyBatteryStatusChanged(intent);
                 mBatteryDefenderNotification.dispatchIntent(intent);
                 mAdaptiveChargingNotification.dispatchIntent(intent);
